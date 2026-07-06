@@ -1,4 +1,3 @@
-markdown
 # 🎮 2048 Sphere
 
 **2048 Sphere** is a decentralized 2048 game built on the **Sphere Network**. Players pay a **1 UCT entry fee** to play, and if they reach a score of **2048**, they earn a **0.5 UCT reward** — all powered by the Sphere wallet and smart contract intents.
@@ -34,6 +33,7 @@ markdown
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 20+
 - A Sphere wallet (browser extension or web app)
 
@@ -51,30 +51,39 @@ npm install
 
 # Start development server
 npm run dev
-Open http://localhost:5173/my-sphere-app/ to play locally.
+```
 
-🔧 Deployment
-bash
+Open [http://localhost:5173/my-sphere-app/](http://localhost:5173/my-sphere-app/) to play locally.
+
+---
+
+## 🔧 Deployment
+
+```bash
 # Build the app
 npm run build
 
 # Deploy to GitHub Pages
 npm run deploy
-The app will be available at: https://jaguard2021.github.io/my-sphere-app/
+```
 
-💡 How It Works
-Connect Wallet — Click "Connect Wallet" and approve permissions in your Sphere wallet.
+The app will be available at: [https://jaguard2021.github.io/my-sphere-app/](https://jaguard2021.github.io/my-sphere-app/)
 
-Pay Entry Fee — Click "Play 1 UCT" — 1 UCT is sent to the escrow wallet.
+---
 
-Play 2048 — Use arrow keys or on-screen buttons to merge tiles.
+## 💡 How It Works
 
-Earn Rewards — If you reach 2048 points, the app triggers a MINT intent to reward you with 0.5 UCT.
+1. **Connect Wallet** — Click "Connect Wallet" and approve permissions in your Sphere wallet.
+2. **Pay Entry Fee** — Click "Play 1 UCT" — 1 UCT is sent to the escrow wallet.
+3. **Play 2048** — Use arrow keys or on-screen buttons to merge tiles.
+4. **Earn Rewards** — If you reach 2048 points, the app triggers a MINT intent to reward you with 0.5 UCT.
+5. **Play Again** — Start a new game (free) or return to lobby to pay again.
 
-Play Again — Start a new game (free) or return to lobby to pay again.
+---
 
-📁 Project Structure
-text
+## 📁 Project Structure
+
+```
 src/
 ├── components/
 │   ├── WalletCard.tsx      # Connect/disconnect UI
@@ -89,26 +98,31 @@ src/
 │   ├── useEntryFee.ts      # Entry fee logic
 │   └── useEscrow.ts        # Escrow wallet address
 └── App.tsx                 # Main orchestrator
-🧪 Testing the Flow
-To test the full flow without real funds, you can use the self-transfer mode (set ESCROW_ADDRESS = '' in useEscrow.ts). This sends the entry fee back to yourself.
-
-📝 License
-MIT
-
-🙌 Acknowledgments
-Built with ❤️ for the Sphere Network ecosystem
-
-Inspired by the classic 2048 game
-
-Special thanks to the Sphere SDK team
-
-📬 Contact
-Developer: jaguard2021
-Project Repository: github.com/jaguard2021/my-sphere-app
-
-text
+```
 
 ---
 
+## 🧪 Testing the Flow
 
+To test the full flow without real funds, you can use the **self-transfer** mode (set `ESCROW_ADDRESS = ''` in `useEscrow.ts`). This sends the entry fee back to yourself.
 
+---
+
+## 📝 License
+
+MIT
+
+---
+
+## 🙌 Acknowledgments
+
+- Built with ❤️ for the **Sphere Network** ecosystem
+- Inspired by the classic 2048 game
+- Special thanks to the Sphere SDK team
+
+---
+
+## 📬 Contact
+
+**Developer:** [jaguard2021](https://github.com/jaguard2021)  
+**Project Repository:** [github.com/jaguard2021/my-sphere-app](https://github.com/jaguard2021/my-sphere-app)
